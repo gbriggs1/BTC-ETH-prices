@@ -1,10 +1,15 @@
-import requests
+from flask import Flask, render_template
+app = Flask(__name__)
 
-resp = requests.get('https://api.kraken.com/0/public/Spread?pair=BTCUSD')
+@app.route('/')
+def index():
+  return render_template('index.html')
 
-bid = resp.json()['result']['XXBTZUSD'][0][1]
-ask = resp.json()['result']['XXBTZUSD'][0][2]
-d = {}
-d['bid'] = bid
-d['ask'] = ask
-return d
+@app.route('/my-link/')
+def my_link():
+  print ('I got clicked!')
+
+  return 'Click.'
+
+if __name__ == '__main__':
+  app.run(debug=True)
