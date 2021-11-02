@@ -1,14 +1,65 @@
 <!doctype html>
 
-
-<head><title>Test</title> 
+<head><title>BTC and ETH Prices</title>
     <meta charset=utf-8> </head>
-    <body>
-        <h1>My Website</h1>
-        <form action="/my-link/">
-            <input type="submit" value="Click me" />
-        </form>
-        
-        <button> <a href="/my-link/">Click me</a></button>
+    <body style="background-color:white;font-family:Georgia">
+        <h1 style="text-align:center;color:orangered">BTC & ETH Prices</h1>
+        <h3 style="text-align:center;color:black">George Briggs</h3>
+        <h4 style="text-align:center;color:orangered">Prices displayed are taken from Coinbase and Kraken APIs</h4>
+        <br>
+        <br>
+        <div>
+          <h3 style="float:left; text-align:left; text-indent: 18.0em; color:orangered">Coinbase Prices</h3>
+          <h3 style="float:right; text-align:center; text-indent: -29.0em; color:orangered">Kraken Prices</h3>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div>
+            <img src=https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/btc.svg align="left" height="100" width="100"/>
+          <h3 style="float:left; text-align:left; text-indent: 13.0em">{{data[0].BTC.bid}}</h3>
+          <h3 style="float:right; text-align:center; text-indent: -28.0em">{{data[1].BTC.bid}}</h3>
+        <div/>
+        <br>
+        <br>
+        <br>
+        <div>
+          <h3 style="float:left; text-align:left; text-indent: -8.00em">{{data[0].BTC.ask}}</h3>
+          <h3 style="float:right; text-align:center; text-indent: -28.0em">{{data[1].BTC.ask}}</h3>
+        <div/>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <div>
+            <img src=https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/eth.svg align="left" height="100" width="100"/>
+          <h3 style="float:left; text-align:left; text-indent: 13.0em">{{data[0].ETH.bid}}</h3>
+          <h3 style="float:right; text-align:center; text-indent: -28.0em">{{data[1].ETH.bid}}</h3>
+        <div/>
+        <br>
+        <br>
+        <br>
+        <div>
+          <h3 style="float:left; text-align:left; text-indent: -6.98em">{{data[0].ETH.ask}}</h3>
+          <h3 style="float:right; text-align:center; text-indent: -28.0em">{{data[1].ETH.ask}}</h3>
+        <div/>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <h4 style="float:center; text-align:center">{{data[2].BTC}}</h4>
+        <h4 style="float:center; text-align:center">{{data[2].ETH}}</h4>
+
+        <button style="background:orangered;color:white;height:30px;width:200px;text-align:center;font-size:13px" onClick="window.location.reload();">Refresh Page</button>
+
+
+
+
+
+
+
 
     </body>
