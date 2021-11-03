@@ -1,6 +1,6 @@
 # BTC-ETH-prices
 
-# Directions to Run:
+## Directions to Run:
 
 First clone and cd into the repo:
 
