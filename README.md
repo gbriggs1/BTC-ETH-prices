@@ -1,6 +1,7 @@
 # BTC-ETH-prices
 
-**Directions to Run:** 
+# Directions to Run:
+
 First clone and cd into the repo:
 
 $ git clone https://github.com/gbriggs1/BTC-ETH-prices.git
