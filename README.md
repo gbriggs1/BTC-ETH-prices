@@ -10,15 +10,20 @@ $ cd BTC-ETH-prices
 
 Then make sure you have flask installed
 You can check by running:
-> which flask
+
+$ which flask
 
 If you do not have flask installed, install it by running:
-> pip3 install flask
+
+$ pip3 install flask
+
 or 
-> pip install flask
+
+$ pip install flask
 
 Then run by entering:
-> python3 server.py
+
+$ python3 server.py
 
 The script will output a link (ex: http://127.0.0.1:5000/). Copy this link and paste it into your browser. 
 Note: HTML was formatted for Google Chrome and may have indentation errors in other browsers.
