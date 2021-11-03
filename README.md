@@ -1,5 +1,4 @@
 # BTC-ETH-prices
-Prices taken from Coinbase and Kraken
 
 **To Run:** 
 First clone and cd into the repo:
