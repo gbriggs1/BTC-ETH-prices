@@ -3,7 +3,9 @@ Prices taken from Coinbase and Kraken
 
 **To Run:** 
 First clone and cd into the repo:
+
 $ git clone https://github.com/gbriggs1/BTC-ETH-prices.git
+
 $ cd BTC-ETH-prices
 
 Then make sure you have flask installed
